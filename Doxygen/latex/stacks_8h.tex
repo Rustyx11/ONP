@@ -1,0 +1,171 @@
+\hypertarget{stacks_8h}{}\doxysection{stacks.\+h File Reference}
+\label{stacks_8h}\index{stacks.h@{stacks.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnumber__stack__node}{number\+\_\+stack\+\_\+node}}
+\begin{DoxyCompactList}\small\item\em struktura wezla stosu liczbowego \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structchar__array__stack__node}{char\+\_\+array\+\_\+stack\+\_\+node}}
+\begin{DoxyCompactList}\small\item\em struktura wezla stosu z tablica znakow \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stacks_8h_a70ed59adcb4159ac551058053e649640}{SIZE}}~19
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structnumber__stack__node}{number\+\_\+stack\+\_\+node}} \mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}}
+\item 
+typedef struct \mbox{\hyperlink{structchar__array__stack__node}{char\+\_\+array\+\_\+stack\+\_\+node}} \mbox{\hyperlink{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}{char\+\_\+array\+\_\+node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{stacks_8h_af72db1a8dcd1aa630c1d9cd8b5bbf1d5}{push\+\_\+value}} (\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$$\ast$top, double number)
+\begin{DoxyCompactList}\small\item\em funkcja dodaje liczbe podana przez parametr do stosu liczbowego i przez parametr zwraca wskaznik do nowego wierzcholka stosu \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{stacks_8h_aeaeedf55edc72448d998f3b5a86a428d}{pop\+\_\+value}} (\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$$\ast$top)
+\begin{DoxyCompactList}\small\item\em funkcja zwraca wartosc w wierzcholku stosu, usuwa go i przez parametr zwraca wskaznik do nowego wierzcholka stosu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stacks_8h_a750bef8d2466fe93de690aa469511a0e}{read\+\_\+value\+\_\+stack}} (\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$top, int $\ast$lines, bool show\+\_\+step\+\_\+by\+\_\+step)
+\item 
+bool \mbox{\hyperlink{stacks_8h_a407595cacab98a90625cccf4798b833f}{push\+\_\+char\+\_\+array}} (\mbox{\hyperlink{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}{char\+\_\+array\+\_\+node}} $\ast$$\ast$top, char $\ast$array)
+\item 
+bool \mbox{\hyperlink{stacks_8h_ad98e5ea4c4fbde9c12f5ac5b4e438026}{pop\+\_\+char\+\_\+array}} (\mbox{\hyperlink{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}{char\+\_\+array\+\_\+node}} $\ast$$\ast$top, char $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{stacks_8h_a70ed59adcb4159ac551058053e649640}\label{stacks_8h_a70ed59adcb4159ac551058053e649640}} 
+\index{stacks.h@{stacks.h}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily \#define SIZE~19}
+
+
+
+Definition at line 7 of file stacks.\+h.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}\label{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}} 
+\index{stacks.h@{stacks.h}!char\_array\_node@{char\_array\_node}}
+\index{char\_array\_node@{char\_array\_node}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{char\_array\_node}{char\_array\_node}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structchar__array__stack__node}{char\+\_\+array\+\_\+stack\+\_\+node}} \mbox{\hyperlink{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}{char\+\_\+array\+\_\+node}}}
+
+
+
+Definition at line 1 of file stacks.\+h.
+
+\mbox{\Hypertarget{stacks_8h_a917151d4a36f901cbed35a4ccada3664}\label{stacks_8h_a917151d4a36f901cbed35a4ccada3664}} 
+\index{stacks.h@{stacks.h}!number\_node@{number\_node}}
+\index{number\_node@{number\_node}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{number\_node}{number\_node}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structnumber__stack__node}{number\+\_\+stack\+\_\+node}} \mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}}}
+
+
+
+Definition at line 1 of file stacks.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stacks_8h_ad98e5ea4c4fbde9c12f5ac5b4e438026}\label{stacks_8h_ad98e5ea4c4fbde9c12f5ac5b4e438026}} 
+\index{stacks.h@{stacks.h}!pop\_char\_array@{pop\_char\_array}}
+\index{pop\_char\_array@{pop\_char\_array}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{pop\_char\_array()}{pop\_char\_array()}}
+{\footnotesize\ttfamily bool pop\+\_\+char\+\_\+array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}{char\+\_\+array\+\_\+node}} $\ast$$\ast$}]{top,  }\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+funkcja zwraca wartosc w wierzcholku stosu, usuwa go przez parametr zwraca wskaznik do nowego wierzcholka stosu oraz zawartosc tablicy znakowej przechowywanej w wezle 
+\begin{DoxyParams}{Parameters}
+{\em char\+\_\+array\+\_\+node$\ast$$\ast$} & top \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+jezeli stos jest pusty funkcja konczy swoje dzialanie i zwraca wartosc false 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file stacks.\+c.
+
+\mbox{\Hypertarget{stacks_8h_aeaeedf55edc72448d998f3b5a86a428d}\label{stacks_8h_aeaeedf55edc72448d998f3b5a86a428d}} 
+\index{stacks.h@{stacks.h}!pop\_value@{pop\_value}}
+\index{pop\_value@{pop\_value}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{pop\_value()}{pop\_value()}}
+{\footnotesize\ttfamily double pop\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$$\ast$}]{top }\end{DoxyParamCaption})}
+
+
+
+funkcja zwraca wartosc w wierzcholku stosu, usuwa go i przez parametr zwraca wskaznik do nowego wierzcholka stosu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+\_\+node$\ast$$\ast$} & top \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwrocenie wartosci przechowywanej w usunietym wierzcholku 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file stacks.\+c.
+
+\mbox{\Hypertarget{stacks_8h_a407595cacab98a90625cccf4798b833f}\label{stacks_8h_a407595cacab98a90625cccf4798b833f}} 
+\index{stacks.h@{stacks.h}!push\_char\_array@{push\_char\_array}}
+\index{push\_char\_array@{push\_char\_array}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{push\_char\_array()}{push\_char\_array()}}
+{\footnotesize\ttfamily bool push\+\_\+char\+\_\+array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stacks_8h_a40fd61d3860760c46faa958d54ecee7e}{char\+\_\+array\+\_\+node}} $\ast$$\ast$}]{top,  }\item[{char $\ast$}]{array }\end{DoxyParamCaption})}
+
+funkcja zapisuje tablice znakowa podana przez parametr do stosu znakowego 
+\begin{DoxyParams}{Parameters}
+{\em char\+\_\+array\+\_\+node$\ast$$\ast$} & top \\
+\hline
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+jezeli nie udalo sie poprawnie przydzielic miejsca na nowy wezel funkcja konczy swoje dzialanie i zwraca wartosc false 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file stacks.\+c.
+
+\mbox{\Hypertarget{stacks_8h_af72db1a8dcd1aa630c1d9cd8b5bbf1d5}\label{stacks_8h_af72db1a8dcd1aa630c1d9cd8b5bbf1d5}} 
+\index{stacks.h@{stacks.h}!push\_value@{push\_value}}
+\index{push\_value@{push\_value}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{push\_value()}{push\_value()}}
+{\footnotesize\ttfamily bool push\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$$\ast$}]{top,  }\item[{double}]{number }\end{DoxyParamCaption})}
+
+
+
+funkcja dodaje liczbe podana przez parametr do stosu liczbowego i przez parametr zwraca wskaznik do nowego wierzcholka stosu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+\_\+node$\ast$$\ast$} & top \\
+\hline
+{\em number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+jezeli nie udalo sie poprawnie przydzielic miejsca na nowy wezel funkcja konczy swoje dzialanie i zwraca wartosc false 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file stacks.\+c.
+
+\mbox{\Hypertarget{stacks_8h_a750bef8d2466fe93de690aa469511a0e}\label{stacks_8h_a750bef8d2466fe93de690aa469511a0e}} 
+\index{stacks.h@{stacks.h}!read\_value\_stack@{read\_value\_stack}}
+\index{read\_value\_stack@{read\_value\_stack}!stacks.h@{stacks.h}}
+\doxysubsubsection{\texorpdfstring{read\_value\_stack()}{read\_value\_stack()}}
+{\footnotesize\ttfamily void read\+\_\+value\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$}]{top,  }\item[{int $\ast$}]{lines,  }\item[{bool}]{show\+\_\+step\+\_\+by\+\_\+step }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file stacks.\+c.
+

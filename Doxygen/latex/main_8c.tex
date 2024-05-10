@@ -1,0 +1,306 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$raylib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}stacks.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rpn\+\_\+generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}conversions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calculate\+\_\+expression.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}infix\+\_\+to\+\_\+rpn.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rpn\+\_\+to\+\_\+infix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compare\+\_\+times.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167}{mode}} \{ \newline
+\mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a47941471163e972fb0ca1b5fd674726b}{CALCULATE\+\_\+\+EXPRESSION}}
+, \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a94b9e19ec4e380ae93639d76303eee10}{GENERATE\+\_\+\+RPN}}
+, \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167ac6dde6b185a5e38ba4c2d40259fd07fb}{COMPARE\+\_\+\+TIMES}}
+, \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167add4b075d47e5714142fef8500725e641}{INFIX\+\_\+\+TO\+\_\+\+RPN}}
+, \newline
+\mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a9e6e81a1f24ca562e7bc9ec99efb6fa5}{RPN\+\_\+\+TO\+\_\+\+INFIX}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a50760123fd1350f899d72b61785b5d97}{enter\+\_\+the\+\_\+expression}} (char $\ast$exp)
+\begin{DoxyCompactList}\small\item\em Wejscie do wyrazenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a2b9860c003c81157075a32fd2df88955}{print\+\_\+result}} (\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$top, char $\ast$exp)
+\begin{DoxyCompactList}\small\item\em Wyswietlanie wyniku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main_8c_a4b6fd646497108861b9e7b19f31e4765}{is\+\_\+rpn}} (char $\ast$exp)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca czy dzialanie jest w odwrotnej notacji polskiej. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a252a5eb32efd0a68ce93609ea415f5cb}{stars}} ()
+\item 
+void \mbox{\hyperlink{main_8c_ad840e6bbb318a8d8dfc212cd94dcf629}{load\+\_\+buttons\+\_\+textures}} (struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}} $\ast$buttons)
+\begin{DoxyCompactList}\small\item\em Wczytanie tekstur przyciskow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a7e01149c203792cf8e2243d9110cf6bb}{unload\+\_\+button\+\_\+textures}} (struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}} $\ast$buttons)
+\begin{DoxyCompactList}\small\item\em funkcja ktora nie laduje tekstur przyciskow \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a031f19701e603820279e2a23593108f5}{draw\+\_\+buttons}} (struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}} $\ast$buttons)
+\begin{DoxyCompactList}\small\item\em Funkcja rysujaca przyciski. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main_8c_acc90bfc12a647349a19c49e63498d7c1}{what\+\_\+to\+\_\+do}} (int $\ast$decision)
+\begin{DoxyCompactList}\small\item\em Funkcja dzieki ktorej wybieramy operacje. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a04df6ef8727a69338129cd210bf39dad}{program\+\_\+mode}} = \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a47941471163e972fb0ca1b5fd674726b}{CALCULATE\+\_\+\+EXPRESSION}}
+\item 
+int \mbox{\hyperlink{main_8c_a0588856d80b7ce1fbf435530feed2c08}{step\+\_\+by\+\_\+step}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167}\label{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167}} 
+\index{main.c@{main.c}!mode@{mode}}
+\index{mode@{mode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167}{mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CALCULATE\_EXPRESSION@{CALCULATE\_EXPRESSION}!main.c@{main.c}}\index{main.c@{main.c}!CALCULATE\_EXPRESSION@{CALCULATE\_EXPRESSION}}}\mbox{\Hypertarget{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a47941471163e972fb0ca1b5fd674726b}\label{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a47941471163e972fb0ca1b5fd674726b}} 
+CALCULATE\+\_\+\+EXPRESSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERATE\_RPN@{GENERATE\_RPN}!main.c@{main.c}}\index{main.c@{main.c}!GENERATE\_RPN@{GENERATE\_RPN}}}\mbox{\Hypertarget{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a94b9e19ec4e380ae93639d76303eee10}\label{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a94b9e19ec4e380ae93639d76303eee10}} 
+GENERATE\+\_\+\+RPN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMPARE\_TIMES@{COMPARE\_TIMES}!main.c@{main.c}}\index{main.c@{main.c}!COMPARE\_TIMES@{COMPARE\_TIMES}}}\mbox{\Hypertarget{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167ac6dde6b185a5e38ba4c2d40259fd07fb}\label{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167ac6dde6b185a5e38ba4c2d40259fd07fb}} 
+COMPARE\+\_\+\+TIMES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFIX\_TO\_RPN@{INFIX\_TO\_RPN}!main.c@{main.c}}\index{main.c@{main.c}!INFIX\_TO\_RPN@{INFIX\_TO\_RPN}}}\mbox{\Hypertarget{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167add4b075d47e5714142fef8500725e641}\label{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167add4b075d47e5714142fef8500725e641}} 
+INFIX\+\_\+\+TO\+\_\+\+RPN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RPN\_TO\_INFIX@{RPN\_TO\_INFIX}!main.c@{main.c}}\index{main.c@{main.c}!RPN\_TO\_INFIX@{RPN\_TO\_INFIX}}}\mbox{\Hypertarget{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a9e6e81a1f24ca562e7bc9ec99efb6fa5}\label{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a9e6e81a1f24ca562e7bc9ec99efb6fa5}} 
+RPN\+\_\+\+TO\+\_\+\+INFIX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 18 of file main.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a031f19701e603820279e2a23593108f5}\label{main_8c_a031f19701e603820279e2a23593108f5}} 
+\index{main.c@{main.c}!draw\_buttons@{draw\_buttons}}
+\index{draw\_buttons@{draw\_buttons}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{draw\_buttons()}{draw\_buttons()}}
+{\footnotesize\ttfamily void draw\+\_\+buttons (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}} $\ast$}]{buttons }\end{DoxyParamCaption})}
+
+
+
+Funkcja rysujaca przyciski. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}}} & $\ast$buttons \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a50760123fd1350f899d72b61785b5d97}\label{main_8c_a50760123fd1350f899d72b61785b5d97}} 
+\index{main.c@{main.c}!enter\_the\_expression@{enter\_the\_expression}}
+\index{enter\_the\_expression@{enter\_the\_expression}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{enter\_the\_expression()}{enter\_the\_expression()}}
+{\footnotesize\ttfamily void enter\+\_\+the\+\_\+expression (\begin{DoxyParamCaption}\item[{char $\ast$}]{exp }\end{DoxyParamCaption})}
+
+
+
+Wejscie do wyrazenia. 
+
+Funkcja ktora wchodzi do wyrazenia.
+
+
+\begin{DoxyParams}{Parameters}
+{\em exp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 326 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a4b6fd646497108861b9e7b19f31e4765}\label{main_8c_a4b6fd646497108861b9e7b19f31e4765}} 
+\index{main.c@{main.c}!is\_rpn@{is\_rpn}}
+\index{is\_rpn@{is\_rpn}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{is\_rpn()}{is\_rpn()}}
+{\footnotesize\ttfamily bool is\+\_\+rpn (\begin{DoxyParamCaption}\item[{char $\ast$}]{exp }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzajaca czy dzialanie jest w odwrotnej notacji polskiej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+\_\+node$\ast$} & top \\
+\hline
+{\em exp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 355 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_ad840e6bbb318a8d8dfc212cd94dcf629}\label{main_8c_ad840e6bbb318a8d8dfc212cd94dcf629}} 
+\index{main.c@{main.c}!load\_buttons\_textures@{load\_buttons\_textures}}
+\index{load\_buttons\_textures@{load\_buttons\_textures}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{load\_buttons\_textures()}{load\_buttons\_textures()}}
+{\footnotesize\ttfamily void load\+\_\+buttons\+\_\+textures (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}} $\ast$}]{buttons }\end{DoxyParamCaption})}
+
+
+
+Wczytanie tekstur przyciskow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}}} & $\ast$buttons \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 235 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a2b9860c003c81157075a32fd2df88955}\label{main_8c_a2b9860c003c81157075a32fd2df88955}} 
+\index{main.c@{main.c}!print\_result@{print\_result}}
+\index{print\_result@{print\_result}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{print\_result()}{print\_result()}}
+{\footnotesize\ttfamily void print\+\_\+result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stacks_8h_a917151d4a36f901cbed35a4ccada3664}{number\+\_\+node}} $\ast$}]{top,  }\item[{char $\ast$}]{exp }\end{DoxyParamCaption})}
+
+
+
+Wyswietlanie wyniku. 
+
+Funkcja wyswietlajaca wynik.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+\_\+node$\ast$} & top \\
+\hline
+{\em exp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 337 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a252a5eb32efd0a68ce93609ea415f5cb}\label{main_8c_a252a5eb32efd0a68ce93609ea415f5cb}} 
+\index{main.c@{main.c}!stars@{stars}}
+\index{stars@{stars}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{stars()}{stars()}}
+{\footnotesize\ttfamily void stars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 385 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a7e01149c203792cf8e2243d9110cf6bb}\label{main_8c_a7e01149c203792cf8e2243d9110cf6bb}} 
+\index{main.c@{main.c}!unload\_button\_textures@{unload\_button\_textures}}
+\index{unload\_button\_textures@{unload\_button\_textures}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{unload\_button\_textures()}{unload\_button\_textures()}}
+{\footnotesize\ttfamily void unload\+\_\+button\+\_\+textures (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}} $\ast$}]{buttons }\end{DoxyParamCaption})}
+
+
+
+funkcja ktora nie laduje tekstur przyciskow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structbuttons__textures}{buttons\+\_\+textures}}} & $\ast$buttons \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_acc90bfc12a647349a19c49e63498d7c1}\label{main_8c_acc90bfc12a647349a19c49e63498d7c1}} 
+\index{main.c@{main.c}!what\_to\_do@{what\_to\_do}}
+\index{what\_to\_do@{what\_to\_do}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{what\_to\_do()}{what\_to\_do()}}
+{\footnotesize\ttfamily bool what\+\_\+to\+\_\+do (\begin{DoxyParamCaption}\item[{int $\ast$}]{decision }\end{DoxyParamCaption})}
+
+
+
+Funkcja dzieki ktorej wybieramy operacje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca wartosc true lub false 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file main.\+c.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_a04df6ef8727a69338129cd210bf39dad}\label{main_8c_a04df6ef8727a69338129cd210bf39dad}} 
+\index{main.c@{main.c}!program\_mode@{program\_mode}}
+\index{program\_mode@{program\_mode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{program\_mode}{program\_mode}}
+{\footnotesize\ttfamily int program\+\_\+mode = \mbox{\hyperlink{main_8c_a1a6b6fb557d8d37d59700faf4e4c9167a47941471163e972fb0ca1b5fd674726b}{CALCULATE\+\_\+\+EXPRESSION}}}
+
+
+
+Definition at line 27 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a0588856d80b7ce1fbf435530feed2c08}\label{main_8c_a0588856d80b7ce1fbf435530feed2c08}} 
+\index{main.c@{main.c}!step\_by\_step@{step\_by\_step}}
+\index{step\_by\_step@{step\_by\_step}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{step\_by\_step}{step\_by\_step}}
+{\footnotesize\ttfamily int step\+\_\+by\+\_\+step = 1}
+
+
+
+Definition at line 28 of file main.\+c.
+

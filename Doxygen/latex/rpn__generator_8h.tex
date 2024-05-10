@@ -1,0 +1,132 @@
+\hypertarget{rpn__generator_8h}{}\doxysection{rpn\+\_\+generator.\+h File Reference}
+\label{rpn__generator_8h}\index{rpn\_generator.h@{rpn\_generator.h}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rpn__generator_8h_a33d8dc778feb487e83e00a6ce7406d6d}{NUMBER\+\_\+\+OF\+\_\+\+MATH\+\_\+\+OPERATORS}}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rpn__generator_8h_af21377723faeb9c85e2d45e64ca317dd}{generate\+\_\+number}} (char $\ast$number, int size\+\_\+of\+\_\+expression)
+\begin{DoxyCompactList}\small\item\em prototyp funkcji losujacej liczbe w postaci znakow i zapisujacej ja w tablicy znakowej podawanej do niej przez parametr \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{rpn__generator_8h_a73913323874f2ca1502e8bd5f5d44164}{generate\+\_\+math\+\_\+operator}} ()
+\begin{DoxyCompactList}\small\item\em prototyp funkcji losujacej operator matematyczny \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rpn__generator_8h_a60d3348eaf3450120391173d655b960e}{generate\+\_\+rpn}} (char $\ast$onp\+\_\+expression, int size\+\_\+of\+\_\+expression, int $\ast$time)
+\begin{DoxyCompactList}\small\item\em prototyp funckja generujacej wyrazenie ONP i zapisujacej je w tablicy znakowej podawanej przez parametr \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rpn__generator_8h_acd1809af2457fd0049f3c86f4651ffea}{draw\+\_\+rpn\+\_\+generator}} (int $\ast$size\+\_\+of\+\_\+generated\+\_\+rpn, char $\ast$generated\+\_\+rpn)
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca wynik w generatorze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{rpn__generator_8h_a33d8dc778feb487e83e00a6ce7406d6d}\label{rpn__generator_8h_a33d8dc778feb487e83e00a6ce7406d6d}} 
+\index{rpn\_generator.h@{rpn\_generator.h}!NUMBER\_OF\_MATH\_OPERATORS@{NUMBER\_OF\_MATH\_OPERATORS}}
+\index{NUMBER\_OF\_MATH\_OPERATORS@{NUMBER\_OF\_MATH\_OPERATORS}!rpn\_generator.h@{rpn\_generator.h}}
+\doxysubsubsection{\texorpdfstring{NUMBER\_OF\_MATH\_OPERATORS}{NUMBER\_OF\_MATH\_OPERATORS}}
+{\footnotesize\ttfamily \#define NUMBER\+\_\+\+OF\+\_\+\+MATH\+\_\+\+OPERATORS~5}
+
+
+
+Definition at line 4 of file rpn\+\_\+generator.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rpn__generator_8h_acd1809af2457fd0049f3c86f4651ffea}\label{rpn__generator_8h_acd1809af2457fd0049f3c86f4651ffea}} 
+\index{rpn\_generator.h@{rpn\_generator.h}!draw\_rpn\_generator@{draw\_rpn\_generator}}
+\index{draw\_rpn\_generator@{draw\_rpn\_generator}!rpn\_generator.h@{rpn\_generator.h}}
+\doxysubsubsection{\texorpdfstring{draw\_rpn\_generator()}{draw\_rpn\_generator()}}
+{\footnotesize\ttfamily void draw\+\_\+rpn\+\_\+generator (\begin{DoxyParamCaption}\item[{int $\ast$}]{size\+\_\+of\+\_\+generated\+\_\+rpn,  }\item[{char $\ast$}]{generated\+\_\+rpn }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca wynik w generatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+of\+\_\+generated\+\_\+rpn} & \\
+\hline
+{\em generated\+\_\+rpn} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file rpn\+\_\+generator.\+c.
+
+\mbox{\Hypertarget{rpn__generator_8h_a73913323874f2ca1502e8bd5f5d44164}\label{rpn__generator_8h_a73913323874f2ca1502e8bd5f5d44164}} 
+\index{rpn\_generator.h@{rpn\_generator.h}!generate\_math\_operator@{generate\_math\_operator}}
+\index{generate\_math\_operator@{generate\_math\_operator}!rpn\_generator.h@{rpn\_generator.h}}
+\doxysubsubsection{\texorpdfstring{generate\_math\_operator()}{generate\_math\_operator()}}
+{\footnotesize\ttfamily char generate\+\_\+math\+\_\+operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prototyp funkcji losujacej operator matematyczny 
+
+prototyp funkcji losujacej operator matematyczny
+
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file rpn\+\_\+generator.\+c.
+
+\mbox{\Hypertarget{rpn__generator_8h_af21377723faeb9c85e2d45e64ca317dd}\label{rpn__generator_8h_af21377723faeb9c85e2d45e64ca317dd}} 
+\index{rpn\_generator.h@{rpn\_generator.h}!generate\_number@{generate\_number}}
+\index{generate\_number@{generate\_number}!rpn\_generator.h@{rpn\_generator.h}}
+\doxysubsubsection{\texorpdfstring{generate\_number()}{generate\_number()}}
+{\footnotesize\ttfamily void generate\+\_\+number (\begin{DoxyParamCaption}\item[{char $\ast$}]{number,  }\item[{int}]{size\+\_\+of\+\_\+expression }\end{DoxyParamCaption})}
+
+
+
+prototyp funkcji losujacej liczbe w postaci znakow i zapisujacej ja w tablicy znakowej podawanej do niej przez parametr 
+
+prototyp funkcji losujacej liczbe w postaci znakow i zapisujacej ja w tablicy znakowej podawanej do niej przez parametr
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ przechowanie liczby \\
+\hline
+{\em size\+\_\+of\+\_\+expression} & -\/ wielkosc wyrazenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file rpn\+\_\+generator.\+c.
+
+\mbox{\Hypertarget{rpn__generator_8h_a60d3348eaf3450120391173d655b960e}\label{rpn__generator_8h_a60d3348eaf3450120391173d655b960e}} 
+\index{rpn\_generator.h@{rpn\_generator.h}!generate\_rpn@{generate\_rpn}}
+\index{generate\_rpn@{generate\_rpn}!rpn\_generator.h@{rpn\_generator.h}}
+\doxysubsubsection{\texorpdfstring{generate\_rpn()}{generate\_rpn()}}
+{\footnotesize\ttfamily void generate\+\_\+rpn (\begin{DoxyParamCaption}\item[{char $\ast$}]{rpn\+\_\+expression,  }\item[{int}]{size\+\_\+of\+\_\+expression,  }\item[{int $\ast$}]{time }\end{DoxyParamCaption})}
+
+
+
+prototyp funckja generujacej wyrazenie ONP i zapisujacej je w tablicy znakowej podawanej przez parametr 
+
+prototyp funckja generujacej wyrazenie ONP i zapisujacej je w tablicy znakowej podawanej przez parametr
+
+dlugosci podanej jako parametr i zapisuje je w tablicy znakowej podawanej przez parametr 
+\begin{DoxyParams}{Parameters}
+{\em rpn\+\_\+expression} & -\/ Wyrazenie w ONP \\
+\hline
+{\em size\+\_\+of\+\_\+expression} & -\/ wielkosc wyrazenia \\
+\hline
+{\em time} & -\/ czas trwania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file rpn\+\_\+generator.\+c.
+

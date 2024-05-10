@@ -1,0 +1,194 @@
+\hypertarget{calculate__expression_8h}{}\doxysection{calculate\+\_\+expression.\+h File Reference}
+\label{calculate__expression_8h}\index{calculate\_expression.h@{calculate\_expression.h}}
+{\ttfamily \#include \char`\"{}raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}conversions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stacks.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{calculate__expression_8h_a2ccbe17c34eb277a1885ec10e720c095}{calculate\+\_\+rpn\+\_\+expression}} (char $\ast$exp, int \mbox{\hyperlink{main_8c_a0588856d80b7ce1fbf435530feed2c08}{step\+\_\+by\+\_\+step}})
+\begin{DoxyCompactList}\small\item\em Funkcja obliczajaca dzialanie odwrotniej notacji polskiej. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{calculate__expression_8h_a857c6e3430bf78fff4673523e779c9cb}{manage\+\_\+calculate\+\_\+expression}} (bool $\ast$\mbox{\hyperlink{calculate__expression_8h_aa50e4365f2990d9a67acfbd963bf467e}{mouse\+On\+Text}}, Rectangle \mbox{\hyperlink{calculate__expression_8h_a402c7979b570bcaa4250aa4ac592be90}{rpn\+Text\+Box}}, int $\ast$frames\+Counter, int $\ast$letter\+Count, int $\ast$\mbox{\hyperlink{main_8c_a0588856d80b7ce1fbf435530feed2c08}{step\+\_\+by\+\_\+step}}, char $\ast$exp, char $\ast$conversion\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Funkcja obliczajaca dzialanie odwrotniej notacji polskiej. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{calculate__expression_8h_a478b99356b85e7b7b2baa181ad790d30}{draw\+\_\+calculate\+\_\+expression\+\_\+window}} (bool \mbox{\hyperlink{calculate__expression_8h_aa50e4365f2990d9a67acfbd963bf467e}{mouse\+On\+Text}}, int $\ast$frames\+Counter, int $\ast$letter\+Count, int \mbox{\hyperlink{main_8c_a0588856d80b7ce1fbf435530feed2c08}{step\+\_\+by\+\_\+step}}, Rectangle \mbox{\hyperlink{calculate__expression_8h_a402c7979b570bcaa4250aa4ac592be90}{rpn\+Text\+Box}}, Rectangle \mbox{\hyperlink{calculate__expression_8h_ac24f8142c85161a879b6ea3260239892}{result\+Text\+Box}}, Rectangle \mbox{\hyperlink{calculate__expression_8h_a319f8e50b9a14a3e5e13eebecee741ed}{result\+Expression\+Text\+Box}}, char $\ast$exp, char $\ast$conversion\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Funkcja ktora wyswietla obliczone dzialanie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{calculate__expression_8h_a4b6fd646497108861b9e7b19f31e4765}{is\+\_\+rpn}} (char $\ast$exp)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca czy dzialanie jest w odwrotnej notacji polskiej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{calculate__expression_8h_a402c7979b570bcaa4250aa4ac592be90}{rpn\+Text\+Box}}
+\item 
+Rectangle \mbox{\hyperlink{calculate__expression_8h_ac24f8142c85161a879b6ea3260239892}{result\+Text\+Box}}
+\item 
+Rectangle \mbox{\hyperlink{calculate__expression_8h_a319f8e50b9a14a3e5e13eebecee741ed}{result\+Expression\+Text\+Box}}
+\item 
+bool \mbox{\hyperlink{calculate__expression_8h_aa50e4365f2990d9a67acfbd963bf467e}{mouse\+On\+Text}}
+\item 
+int \mbox{\hyperlink{calculate__expression_8h_a0588856d80b7ce1fbf435530feed2c08}{step\+\_\+by\+\_\+step}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculate__expression_8h_a2ccbe17c34eb277a1885ec10e720c095}\label{calculate__expression_8h_a2ccbe17c34eb277a1885ec10e720c095}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!calculate\_rpn\_expression@{calculate\_rpn\_expression}}
+\index{calculate\_rpn\_expression@{calculate\_rpn\_expression}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_rpn\_expression()}{calculate\_rpn\_expression()}}
+{\footnotesize\ttfamily double calculate\+\_\+rpn\+\_\+expression (\begin{DoxyParamCaption}\item[{char $\ast$}]{exp,  }\item[{int}]{step\+\_\+by\+\_\+step }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczajaca dzialanie odwrotniej notacji polskiej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exp} & \\
+\hline
+{\em step\+\_\+by\+\_\+step} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca wartosc NULL 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file calculate\+\_\+expression.\+c.
+
+\mbox{\Hypertarget{calculate__expression_8h_a478b99356b85e7b7b2baa181ad790d30}\label{calculate__expression_8h_a478b99356b85e7b7b2baa181ad790d30}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!draw\_calculate\_expression\_window@{draw\_calculate\_expression\_window}}
+\index{draw\_calculate\_expression\_window@{draw\_calculate\_expression\_window}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{draw\_calculate\_expression\_window()}{draw\_calculate\_expression\_window()}}
+{\footnotesize\ttfamily void draw\+\_\+calculate\+\_\+expression\+\_\+window (\begin{DoxyParamCaption}\item[{bool}]{mouse\+On\+Text,  }\item[{int $\ast$}]{frames\+Counter,  }\item[{int $\ast$}]{letter\+Count,  }\item[{int}]{step\+\_\+by\+\_\+step,  }\item[{Rectangle}]{rpn\+Text\+Box,  }\item[{Rectangle}]{result\+Text\+Box,  }\item[{Rectangle}]{result\+Expression\+Text\+Box,  }\item[{char $\ast$}]{exp,  }\item[{char $\ast$}]{conversion\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Funkcja ktora wyswietla obliczone dzialanie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+On\+Text} & \\
+\hline
+{\em frames\+Counter} & \\
+\hline
+{\em letter\+Count} & \\
+\hline
+{\em step\+\_\+by\+\_\+step} & \\
+\hline
+{\em Rectangle} & rpn\+Text\+Box \\
+\hline
+{\em Rectangle} & result\+Text\+Box \\
+\hline
+{\em Rectangle} & result\+Expression\+Text\+Box \\
+\hline
+{\em exp} & \\
+\hline
+{\em conversion\+\_\+result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 225 of file calculate\+\_\+expression.\+c.
+
+\mbox{\Hypertarget{calculate__expression_8h_a4b6fd646497108861b9e7b19f31e4765}\label{calculate__expression_8h_a4b6fd646497108861b9e7b19f31e4765}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!is\_rpn@{is\_rpn}}
+\index{is\_rpn@{is\_rpn}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{is\_rpn()}{is\_rpn()}}
+{\footnotesize\ttfamily bool is\+\_\+rpn (\begin{DoxyParamCaption}\item[{char $\ast$}]{exp }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzajaca czy dzialanie jest w odwrotnej notacji polskiej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+\_\+node$\ast$} & top \\
+\hline
+{\em exp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 355 of file main.\+c.
+
+\mbox{\Hypertarget{calculate__expression_8h_a857c6e3430bf78fff4673523e779c9cb}\label{calculate__expression_8h_a857c6e3430bf78fff4673523e779c9cb}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!manage\_calculate\_expression@{manage\_calculate\_expression}}
+\index{manage\_calculate\_expression@{manage\_calculate\_expression}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{manage\_calculate\_expression()}{manage\_calculate\_expression()}}
+{\footnotesize\ttfamily void manage\+\_\+calculate\+\_\+expression (\begin{DoxyParamCaption}\item[{bool $\ast$}]{mouse\+On\+Text,  }\item[{Rectangle}]{rpn\+Text\+Box,  }\item[{int $\ast$}]{frames\+Counter,  }\item[{int $\ast$}]{letter\+Count,  }\item[{int $\ast$}]{step\+\_\+by\+\_\+step,  }\item[{char $\ast$}]{exp,  }\item[{char $\ast$}]{conversion\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczajaca dzialanie odwrotniej notacji polskiej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+On\+Text} & \\
+\hline
+{\em Rectangle} & rpn\+Text\+Box \\
+\hline
+{\em frames\+Counter} & \\
+\hline
+{\em letter\+Count} & \\
+\hline
+{\em step\+\_\+by\+\_\+step} & \\
+\hline
+{\em exp} & \\
+\hline
+{\em conversion\+\_\+result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file calculate\+\_\+expression.\+c.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{calculate__expression_8h_aa50e4365f2990d9a67acfbd963bf467e}\label{calculate__expression_8h_aa50e4365f2990d9a67acfbd963bf467e}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!mouseOnText@{mouseOnText}}
+\index{mouseOnText@{mouseOnText}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{mouseOnText}{mouseOnText}}
+{\footnotesize\ttfamily bool mouse\+On\+Text\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{calculate__expression_8h_a319f8e50b9a14a3e5e13eebecee741ed}\label{calculate__expression_8h_a319f8e50b9a14a3e5e13eebecee741ed}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!resultExpressionTextBox@{resultExpressionTextBox}}
+\index{resultExpressionTextBox@{resultExpressionTextBox}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{resultExpressionTextBox}{resultExpressionTextBox}}
+{\footnotesize\ttfamily Rectangle result\+Expression\+Text\+Box\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{calculate__expression_8h_ac24f8142c85161a879b6ea3260239892}\label{calculate__expression_8h_ac24f8142c85161a879b6ea3260239892}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!resultTextBox@{resultTextBox}}
+\index{resultTextBox@{resultTextBox}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{resultTextBox}{resultTextBox}}
+{\footnotesize\ttfamily Rectangle result\+Text\+Box\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{calculate__expression_8h_a402c7979b570bcaa4250aa4ac592be90}\label{calculate__expression_8h_a402c7979b570bcaa4250aa4ac592be90}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!rpnTextBox@{rpnTextBox}}
+\index{rpnTextBox@{rpnTextBox}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{rpnTextBox}{rpnTextBox}}
+{\footnotesize\ttfamily Rectangle rpn\+Text\+Box\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{calculate__expression_8h_a0588856d80b7ce1fbf435530feed2c08}\label{calculate__expression_8h_a0588856d80b7ce1fbf435530feed2c08}} 
+\index{calculate\_expression.h@{calculate\_expression.h}!step\_by\_step@{step\_by\_step}}
+\index{step\_by\_step@{step\_by\_step}!calculate\_expression.h@{calculate\_expression.h}}
+\doxysubsubsection{\texorpdfstring{step\_by\_step}{step\_by\_step}}
+{\footnotesize\ttfamily int step\+\_\+by\+\_\+step\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line 28 of file main.\+c.
+

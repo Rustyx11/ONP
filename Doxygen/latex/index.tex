@@ -1,0 +1,35 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ Odwrotna notacja polska to sposób zapisu wyrażeń arytmetycznych, w którym znak wykonywanej operacji umieszczony jest po operandach (zapis postfiksowy), a nie pomiędzy nimi jak w konwencjonalnym zapisie algebraicznym (zapis infiksowy). Taki zapis pozwala na całkowitą rezygnację z użycia nawiasów w wyrażeniach, ponieważ w jednoznaczny sposób określa kolejność wykonywanych działań.
+
+
+
+Została opracowana przez australijskiego naukowca Charlesa Hamblina w oparciu o tak zwaną „\+Notacje polską” Jana Łukasiewicza na potrzeby zastosowań informatycznych. Taka notacja znacznie upraszcza wykonywanie na komputerze obliczeń z nawiasami i zachowaniem kolejności działań. Jest używana w niektórych językach programowania oraz w niektórych kalkulatorach naukowych. Programy komputerowe kompilujące program dokonują analizy wyrażenia arytmetycznego, przekształcając je na ciąg instrukcji odpowiadający odwrotnej notacji polskiej a wyrażenie to jest obliczane podczas wykonywania programu.
+
+Do obliczenia wartości wyrażenia zapisanego w ONP potrzebujemy stosu. Zasada postępowania jest następująca\+:
+
+Wyrażenie ONP przeglądamy od strony lewej do prawej. Jeśli napotkamy liczbę, to umieszczamy ją na stosie. Jeśli napotkamy operator, to ze stosu pobieramy dwie ostatnie liczby, wykonujemy na nich działanie zgodne z napotkanym operatorem i wynik umieszczamy z powrotem na stosie. Gdy wyrażenie zostanie przeglądnięte do końca, na szczycie stosu będzie znajdował się jego wynik.
+
+ Jan Łukasiewicz 1935r\hypertarget{index_autotoc_md1}{}\doxysection{Budowa aplikacji}\label{index_autotoc_md1}
+
+
+Użytkownik ma do wyboru 5 różnych zakładek, każda z nich odpowiada za inny sposób obliczenia.\hypertarget{index_autotoc_md2}{}\doxysubsection{Moduł prezentacji algorytmu}\label{index_autotoc_md2}
+
+
+Użytkownik na samym początku wpisuje wyrażenie w postaci infiksowej, następnie program oblicza działanie i przekształca je na postać odwrotnej notacji polskiej. Po prawej stronie widnieje opcja step by step dzięki której możemy zobaczyć całe działanie krok po kroku.
+
+
+
+Generowanie wyrażeń w notacji ONP
+
+
+
+Porównywanie czasów wygenerowanych wyrażeń w zależności od ich długości.
+
+
+
+Konwersja wyrażenia podanego w notacji infixowej na postać ONP
+
+
+
+Konwersja wyrażenia podanego w notacji ONP na postać infixową 

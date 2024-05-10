@@ -1,0 +1,120 @@
+\hypertarget{rpn__generator_8c}{}\doxysection{rpn\+\_\+generator.\+c File Reference}
+\label{rpn__generator_8c}\index{rpn\_generator.c@{rpn\_generator.c}}
+{\ttfamily \#include \char`\"{}rpn\+\_\+generator.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rpn__generator_8c_af21377723faeb9c85e2d45e64ca317dd}{generate\+\_\+number}} (char $\ast$number, int size\+\_\+of\+\_\+expression)
+\begin{DoxyCompactList}\small\item\em funkcja losuje liczbe w postaci znakow i zapisuje ja w tablicy znakowej podawanej do niej przez parametr \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{rpn__generator_8c_a73913323874f2ca1502e8bd5f5d44164}{generate\+\_\+math\+\_\+operator}} ()
+\begin{DoxyCompactList}\small\item\em funkcja losujaca operator matematyczny \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rpn__generator_8c_a75a0515c0c90ea70cacd0f42f82c92be}{generate\+\_\+rpn}} (char $\ast$rpn\+\_\+expression, int size\+\_\+of\+\_\+expression, int $\ast$time)
+\begin{DoxyCompactList}\small\item\em funckja generuje wyrazenie ONP \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rpn__generator_8c_acd1809af2457fd0049f3c86f4651ffea}{draw\+\_\+rpn\+\_\+generator}} (int $\ast$size\+\_\+of\+\_\+generated\+\_\+rpn, char $\ast$generated\+\_\+rpn)
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca wynik w generatorze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rpn__generator_8c_acd1809af2457fd0049f3c86f4651ffea}\label{rpn__generator_8c_acd1809af2457fd0049f3c86f4651ffea}} 
+\index{rpn\_generator.c@{rpn\_generator.c}!draw\_rpn\_generator@{draw\_rpn\_generator}}
+\index{draw\_rpn\_generator@{draw\_rpn\_generator}!rpn\_generator.c@{rpn\_generator.c}}
+\doxysubsubsection{\texorpdfstring{draw\_rpn\_generator()}{draw\_rpn\_generator()}}
+{\footnotesize\ttfamily void draw\+\_\+rpn\+\_\+generator (\begin{DoxyParamCaption}\item[{int $\ast$}]{size\+\_\+of\+\_\+generated\+\_\+rpn,  }\item[{char $\ast$}]{generated\+\_\+rpn }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca wynik w generatorze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+of\+\_\+generated\+\_\+rpn} & \\
+\hline
+{\em generated\+\_\+rpn} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file rpn\+\_\+generator.\+c.
+
+\mbox{\Hypertarget{rpn__generator_8c_a73913323874f2ca1502e8bd5f5d44164}\label{rpn__generator_8c_a73913323874f2ca1502e8bd5f5d44164}} 
+\index{rpn\_generator.c@{rpn\_generator.c}!generate\_math\_operator@{generate\_math\_operator}}
+\index{generate\_math\_operator@{generate\_math\_operator}!rpn\_generator.c@{rpn\_generator.c}}
+\doxysubsubsection{\texorpdfstring{generate\_math\_operator()}{generate\_math\_operator()}}
+{\footnotesize\ttfamily char generate\+\_\+math\+\_\+operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+funkcja losujaca operator matematyczny 
+
+prototyp funkcji losujacej operator matematyczny
+
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file rpn\+\_\+generator.\+c.
+
+\mbox{\Hypertarget{rpn__generator_8c_af21377723faeb9c85e2d45e64ca317dd}\label{rpn__generator_8c_af21377723faeb9c85e2d45e64ca317dd}} 
+\index{rpn\_generator.c@{rpn\_generator.c}!generate\_number@{generate\_number}}
+\index{generate\_number@{generate\_number}!rpn\_generator.c@{rpn\_generator.c}}
+\doxysubsubsection{\texorpdfstring{generate\_number()}{generate\_number()}}
+{\footnotesize\ttfamily void generate\+\_\+number (\begin{DoxyParamCaption}\item[{char $\ast$}]{number,  }\item[{int}]{size\+\_\+of\+\_\+expression }\end{DoxyParamCaption})}
+
+
+
+funkcja losuje liczbe w postaci znakow i zapisuje ja w tablicy znakowej podawanej do niej przez parametr 
+
+prototyp funkcji losujacej liczbe w postaci znakow i zapisujacej ja w tablicy znakowej podawanej do niej przez parametr
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ przechowanie liczby \\
+\hline
+{\em size\+\_\+of\+\_\+expression} & -\/ wielkosc wyrazenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file rpn\+\_\+generator.\+c.
+
+\mbox{\Hypertarget{rpn__generator_8c_a75a0515c0c90ea70cacd0f42f82c92be}\label{rpn__generator_8c_a75a0515c0c90ea70cacd0f42f82c92be}} 
+\index{rpn\_generator.c@{rpn\_generator.c}!generate\_rpn@{generate\_rpn}}
+\index{generate\_rpn@{generate\_rpn}!rpn\_generator.c@{rpn\_generator.c}}
+\doxysubsubsection{\texorpdfstring{generate\_rpn()}{generate\_rpn()}}
+{\footnotesize\ttfamily void generate\+\_\+rpn (\begin{DoxyParamCaption}\item[{char $\ast$}]{rpn\+\_\+expression,  }\item[{int}]{size\+\_\+of\+\_\+expression,  }\item[{int $\ast$}]{time }\end{DoxyParamCaption})}
+
+
+
+funckja generuje wyrazenie ONP 
+
+prototyp funckja generujacej wyrazenie ONP i zapisujacej je w tablicy znakowej podawanej przez parametr
+
+dlugosci podanej jako parametr i zapisuje je w tablicy znakowej podawanej przez parametr 
+\begin{DoxyParams}{Parameters}
+{\em rpn\+\_\+expression} & -\/ Wyrazenie w ONP \\
+\hline
+{\em size\+\_\+of\+\_\+expression} & -\/ wielkosc wyrazenia \\
+\hline
+{\em time} & -\/ czas trwania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file rpn\+\_\+generator.\+c.
+

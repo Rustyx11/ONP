@@ -1,0 +1,309 @@
+# depslib dependency file v1.0
+1618468636 source:c:\users\arek\desktop\onp\onp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<math.h>
+	<ctype.h>
+	<time.h>
+	<sys/time.h>
+	<string.h>
+	"stacks.h"
+	"rpn_generator.h"
+	"conversions.h"
+
+1618245934 source:c:\users\arek\desktop\onp\onp\stacks.c
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1618398460 c:\users\arek\desktop\onp\onp\stacks.h
+	<stdbool.h>
+
+1618251428 source:c:\users\arek\desktop\onp\onp\rpn_generator.c
+	"rpn_generator.h"
+	<string.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1618126903 c:\users\arek\desktop\onp\onp\rpn_generator.h
+
+1618394835 source:c:\users\arek\desktop\onp\onp\conversions.c
+	"conversions.h"
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+
+1618394564 c:\users\arek\desktop\onp\onp\conversions.h
+
+1619973254 source:c:\users\arek\desktop\onp with raylib\conversions.c
+	"conversions.h"
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+
+1619969794 c:\users\arek\desktop\onp with raylib\conversions.h
+
+1620833893 c:\users\arek\desktop\onp with raylib\stacks.h
+	<stdbool.h>
+	"raylib.h"
+
+1620835937 source:c:\users\arek\desktop\onp with raylib\main.c
+	<stdio.h>
+	<stdlib.h>
+	<raylib.h>
+	<stdbool.h>
+	<math.h>
+	<ctype.h>
+	<time.h>
+	<sys/time.h>
+	<string.h>
+	"stacks.h"
+	"rpn_generator.h"
+	"conversions.h"
+	"calculate_expression.h"
+	"infix_to_rpn.h"
+	"rpn_to_infix.h"
+	"compare_times.h"
+
+1620801646 c:\users\arek\desktop\onp with raylib\rpn_generator.h
+	"raylib.h"
+
+1620802158 source:c:\users\arek\desktop\onp with raylib\rpn_generator.c
+	"rpn_generator.h"
+	<string.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1620833871 source:c:\users\arek\desktop\onp with raylib\stacks.c
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1620836000 source:c:\users\arek\desktop\onp with raylib\calculate_expression.c
+	"calculate_expression.h"
+
+1620835870 c:\users\arek\desktop\onp with raylib\calculate_expression.h
+	"raylib.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<math.h>
+	"conversions.h"
+	"stacks.h"
+
+1620802239 source:c:\users\arek\desktop\onp with raylib\infix_to_rpn.c
+	"infix_to_rpn.h"
+
+1620769163 c:\users\arek\desktop\onp with raylib\infix_to_rpn.h
+	"raylib.h"
+	"stacks.h"
+	"conversions.h"
+
+1620770528 c:\users\arek\desktop\onp with raylib\rpn_to_infix.h
+	"raylib.h"
+	"stacks.h"
+	<string.h>
+	"conversions.h"
+
+1620802269 source:c:\users\arek\desktop\onp with raylib\rpn_to_infix.c
+	"rpn_to_infix.h"
+
+1620802128 source:c:\users\arek\desktop\onp with raylib\compare_times.c
+	"compare_times.h"
+
+1620801646 c:\users\arek\desktop\onp with raylib\compare_times.h
+	"raylib.h"
+	"rpn_generator.h"
+
+1620836000 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\calculate_expression.c
+	"calculate_expression.h"
+
+1620835870 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\calculate_expression.h
+	"raylib.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<math.h>
+	"conversions.h"
+	"stacks.h"
+
+1619969794 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\conversions.h
+
+1622216158 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\stacks.h
+	<stdbool.h>
+	"raylib.h"
+
+1620802128 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\compare_times.c
+	"compare_times.h"
+
+1620801646 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\compare_times.h
+	"raylib.h"
+	"rpn_generator.h"
+
+1622215758 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\rpn_generator.h
+	"raylib.h"
+
+1619973254 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\conversions.c
+	"conversions.h"
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+
+1620802239 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\infix_to_rpn.c
+	"infix_to_rpn.h"
+
+1620769163 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\infix_to_rpn.h
+	"raylib.h"
+	"stacks.h"
+	"conversions.h"
+
+1622225096 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\main.c
+	<stdio.h>
+	<stdlib.h>
+	<raylib.h>
+	<stdbool.h>
+	<math.h>
+	<ctype.h>
+	<time.h>
+	<sys/time.h>
+	<string.h>
+	"stacks.h"
+	"rpn_generator.h"
+	"conversions.h"
+	"calculate_expression.h"
+	"infix_to_rpn.h"
+	"rpn_to_infix.h"
+	"compare_times.h"
+
+1620770528 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\rpn_to_infix.h
+	"raylib.h"
+	"stacks.h"
+	<string.h>
+	"conversions.h"
+
+1622225177 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\rpn_generator.c
+	"rpn_generator.h"
+	<string.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1620802269 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\rpn_to_infix.c
+	"rpn_to_infix.h"
+
+1622216862 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv4\onp with raylib\stacks.c
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\calculate_expression.c
+	"calculate_expression.h"
+
+1622238783 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\calculate_expression.h
+	"raylib.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<math.h>
+	"conversions.h"
+	"stacks.h"
+
+1622238783 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\conversions.h
+
+1622238784 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\stacks.h
+	<stdbool.h>
+	"raylib.h"
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\compare_times.c
+	"compare_times.h"
+
+1622238783 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\compare_times.h
+	"raylib.h"
+	"rpn_generator.h"
+
+1622238783 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\rpn_generator.h
+	"raylib.h"
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\conversions.c
+	"conversions.h"
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\infix_to_rpn.c
+	"infix_to_rpn.h"
+
+1622238784 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\infix_to_rpn.h
+	"raylib.h"
+	"stacks.h"
+	"conversions.h"
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\main.c
+	<stdio.h>
+	<stdlib.h>
+	<raylib.h>
+	<stdbool.h>
+	<math.h>
+	<ctype.h>
+	<time.h>
+	<sys/time.h>
+	<string.h>
+	"stacks.h"
+	"rpn_generator.h"
+	"conversions.h"
+	"calculate_expression.h"
+	"infix_to_rpn.h"
+	"rpn_to_infix.h"
+	"compare_times.h"
+
+1622238784 c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\rpn_to_infix.h
+	"raylib.h"
+	"stacks.h"
+	<string.h>
+	"conversions.h"
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\rpn_generator.c
+	"rpn_generator.h"
+	<string.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1622238783 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\rpn_to_infix.c
+	"rpn_to_infix.h"
+
+1622238784 source:c:\users\nusty\desktop\studia\programowanie_main\projekt_onp\onpv5\onp with raylib\stacks.c
+	"stacks.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

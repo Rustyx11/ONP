@@ -1,0 +1,77 @@
+\hypertarget{conversions_8c}{}\doxysection{conversions.\+c File Reference}
+\label{conversions_8c}\index{conversions.c@{conversions.c}}
+{\ttfamily \#include \char`\"{}conversions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stacks.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{conversions_8c_a926b64b87b4b9da476d07faecbf12b21}{priority}} (char c)
+\item 
+void \mbox{\hyperlink{conversions_8c_a80804f45256a9d10957f8d6d3d34d22a}{convert\+\_\+infix\+\_\+to\+\_\+rpn}} (char $\ast$expression, char $\ast$conversion\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Funkcja konwertuje postac infixowa na odwrotna notacje polska. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{conversions_8c_ab1f4f2018c0f59e9af9823e4410e2f44}{convert\+\_\+rpn\+\_\+to\+\_\+infix}} (char $\ast$rpn)
+\begin{DoxyCompactList}\small\item\em Konwertuje postac odwrotnej notacji polskiej na infixowa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{conversions_8c_a80804f45256a9d10957f8d6d3d34d22a}\label{conversions_8c_a80804f45256a9d10957f8d6d3d34d22a}} 
+\index{conversions.c@{conversions.c}!convert\_infix\_to\_rpn@{convert\_infix\_to\_rpn}}
+\index{convert\_infix\_to\_rpn@{convert\_infix\_to\_rpn}!conversions.c@{conversions.c}}
+\doxysubsubsection{\texorpdfstring{convert\_infix\_to\_rpn()}{convert\_infix\_to\_rpn()}}
+{\footnotesize\ttfamily void convert\+\_\+infix\+\_\+to\+\_\+rpn (\begin{DoxyParamCaption}\item[{char $\ast$}]{expression,  }\item[{char $\ast$}]{conversion\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Funkcja konwertuje postac infixowa na odwrotna notacje polska. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & \\
+\hline
+{\em conversion\+\_\+result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file conversions.\+c.
+
+\mbox{\Hypertarget{conversions_8c_ab1f4f2018c0f59e9af9823e4410e2f44}\label{conversions_8c_ab1f4f2018c0f59e9af9823e4410e2f44}} 
+\index{conversions.c@{conversions.c}!convert\_rpn\_to\_infix@{convert\_rpn\_to\_infix}}
+\index{convert\_rpn\_to\_infix@{convert\_rpn\_to\_infix}!conversions.c@{conversions.c}}
+\doxysubsubsection{\texorpdfstring{convert\_rpn\_to\_infix()}{convert\_rpn\_to\_infix()}}
+{\footnotesize\ttfamily void convert\+\_\+rpn\+\_\+to\+\_\+infix (\begin{DoxyParamCaption}\item[{char $\ast$}]{rpn }\end{DoxyParamCaption})}
+
+
+
+Konwertuje postac odwrotnej notacji polskiej na infixowa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rpn} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca wartosci 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file conversions.\+c.
+
+\mbox{\Hypertarget{conversions_8c_a926b64b87b4b9da476d07faecbf12b21}\label{conversions_8c_a926b64b87b4b9da476d07faecbf12b21}} 
+\index{conversions.c@{conversions.c}!priority@{priority}}
+\index{priority@{priority}!conversions.c@{conversions.c}}
+\doxysubsubsection{\texorpdfstring{priority()}{priority()}}
+{\footnotesize\ttfamily int priority (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file conversions.\+c.
+
